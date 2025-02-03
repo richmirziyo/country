@@ -146,6 +146,7 @@ body {
 
 .hidden {
   display: none;
+  opacity: 0;
 }
 
 /* LODER */
@@ -202,5 +203,22 @@ body {
   }
   40% {
     box-shadow: 0 2.5em 0 0;
+  }
+}
+
+/* MEDIA */
+
+@media (max-width: 375px) {
+  .header {
+    width: 375px;
+    height: 80px;
+  }
+  ol,
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 152px;
+    gap: 75px;
   }
 }
