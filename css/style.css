@@ -45,6 +45,11 @@ body {
   justify-content: space-between;
 }
 
+.header-hr {
+  border: 1px solid rgba(0, 0, 0, 0.0562);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.0562);
+}
+
 .dark-mode {
   background-color: #202c36;
   color: #fff;
@@ -61,13 +66,18 @@ body {
   .dark-mod-lt {
     button {
       border: none;
-      background-color:inherit;
+      background-color: inherit;
       border-radius: 10px;
       box-shadow: none;
       cursor: pointer;
-
-     
     }
+  }
+
+  .header {
+    background-color: #2b3844;
+  }
+  .header-hr {
+    color: #111517;
   }
 }
 
@@ -82,11 +92,11 @@ body {
     border-radius: 10px;
     box-shadow: none;
     cursor: pointer;
-      
-     img{
-width: 40px;
-height: 40px;
-     }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -140,7 +150,7 @@ height: 40px;
 
 /* LODER */
 
-.loader-container {
+.overlay {
   display: flex;
   justify-content: center;
   align-items: center;

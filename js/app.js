@@ -1,5 +1,5 @@
 const countryOl = document.getElementById("country");
-const overlay = document.querySelector(".loader-container");
+const overlay = document.getElementById("overlay");
 
 // MODE =================================================
 
@@ -29,17 +29,20 @@ lightBtn.addEventListener("click", () => {
   toggleModeBtin();
   localStorage.setItem("mode", "");
 });
-// ================================================
 
-// create Element
+//END ======================================================
+
+
+
+// create Element ===========================================================
 const li = document.createElement("li");
 li.className = "list";
 
 async function getData() {
-  // overlay.classList.remove("hidden");
+  // overlay.classList.remove("hidden1");
   const req = await fetch("https://restcountries.com/v3.1/all");
   const data = await req.json();
-  // overlay.classList.add("hidden");
+  // overlay.classList.add("hidden1");
   console.log(data);
   return data;
 }
